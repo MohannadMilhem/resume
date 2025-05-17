@@ -4,9 +4,9 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
-    <div className="bg-black text-white py-8 mt-10 h-50 text-center">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <div className="md:pl-40 space-y-6">
+    <div className="bg-black text-white py-8 pt-10 h-60 text-center">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between ml-40 md:space-y-0 space-y-6">
+        <div className="md:pl-35 space-y-6">
           <a
             href="mailto:mohannad.milhem1201@gmail.com"
             className="flex items-center gap-2 hover:underline"
@@ -22,7 +22,7 @@ export default function Footer() {
             +972-54-234-1808
           </a>
         </div>
-        <div className="pr-40 space-y-6">
+        <div className="md:pr-40 space-y-6">
           <a
             href="www.linkedin.com/in/mohannad-milhem-a39710246"
             className="flex items-center gap-2 hover:underline"
@@ -30,8 +30,17 @@ export default function Footer() {
             <FontAwesomeIcon icon={faLinkedin} />
             Mohannad Milhem
           </a>
-          <a href=""></a>
+          <a
+            href="https://github.com/MohannadMilhem"
+            className="flex items-center gap-2 hover:underline"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+            Mohannd Milhem
+          </a>
         </div>
+      </div>
+      <div className="pt-10">
+        All copy rights are reserved to Mohannad Milhem
       </div>
     </div>
   );

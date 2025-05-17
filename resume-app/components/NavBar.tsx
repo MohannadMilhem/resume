@@ -6,7 +6,9 @@ export default function NavBar() {
       <div className="sticky max-w-7xl sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-bold text-gray-800 mx-20">
-            Mohannad Milhem
+            <Link href="/" className="text-gray hover:text-blue-500">
+              Mohannad Milhem
+            </Link>
           </div>
           <div className="space-x-6">
             <Link

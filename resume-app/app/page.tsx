@@ -5,7 +5,7 @@ config.autoAddCss = false;
 
 export default function HomePage() {
   return (
-    <div className="space-y-10 flex flex-col">
+    <div className="space-y-10 flex flex-col ">
       <div className="p-20">
         <Section
           title="About Me..."
