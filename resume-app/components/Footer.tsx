@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
-    <div className="bg-[#0F0F0F] text-white py-8 pt-10 h-60 text-center">
+    <div className="bg-[#0F0F0F] text-white py-8 pt-10 h-50 text-center">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between ml-40 md:space-y-0 space-y-6">
         <div className="md:pl-35 space-y-6">
           <a
