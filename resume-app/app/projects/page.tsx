@@ -1,6 +1,6 @@
 "use client";
 
-import Section from "@/components/Section";
+import ProjectSection from "@/components/ProjectSection";
 import { useEffect, useState } from "react";
 
 type Project = {
@@ -23,17 +23,21 @@ export default function Projects() {
   console.log(projects);
 
   return (
-    <div className="bg-black min-h-screen flex flex-col space-y-20 text-gray-300">
-      <div className=" text-emerald-500 bold text-3xl pl-30 pt-20 pb-10">
+    <div className="bg-black min-h-screen flex flex-col space-y-20 text-gray-300 pb-20">
+      <div className=" text-emerald-500 bold text-5xl pl-30 pt-20 pb-10 bold">
         Projects
       </div>
       {projects.map((project) => (
-        <Section
+        <ProjectSection
           key={project._id}
           title={project.title}
-          body={project.description}
+          description={project.description}
         />
       ))}
+      <ProjectSection
+        title="More to come"
+        description="This is not all!! more projects will be uploaded soon"
+      />
     </div>
   );
 }

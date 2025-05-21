@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <div className="pt-10 pl-20 sm:pl-30 text-5xl font-bold flex flex-col pb-10 bg-black text-emerald-500">
+    <div className="pt-10 pl-20 sm:pl-30 text-5xl font-bold flex flex-col pb-10 bg-black text-emerald-500 min-h-screen">
       Experience
       <div className="pl-5 pt-15 sm:pl-10    text-sm font-bold sm:text-3xl text-emerald-600 max-w-300">
         Amit Technologies (Cyber), IDF Software Developer & Team Lead |
