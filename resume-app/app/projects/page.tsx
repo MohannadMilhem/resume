@@ -28,12 +28,22 @@ export default function Projects() {
         Projects
       </div>
       {projects.map((project) => (
-        <ProjectSection
-          key={project._id}
-          title={project.title}
-          description={project.description}
-        />
+        <div key={project._id}>
+          <ProjectSection
+            title={project.title}
+            description={project.description}
+          />
+          {project.githubLink && (
+            <a
+              href={project.githubLink}
+              className="ml-40 text-2xl bold hover:underline hover:text-emerald-300"
+            >
+              Go To Github!
+            </a>
+          )}
+        </div>
       ))}
+
       <ProjectSection
         title="More to come"
         description="This is not all!! more projects will be uploaded soon"
